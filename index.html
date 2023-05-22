@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Пример HTML, CSS и JavaScript</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Пример HTML, CSS и JavaScript</h1>
+    <p>Введите сообщение и ключ:</p>
+    <form id="encryptionForm">
+      <label for="messageInput">Сообщение:</label>
+      <input type="text" id="messageInput" required>
+      <br>
+      <label for="keyInput">Ключ:</label>
+      <input type="text" id="keyInput" required>
+      <br>
+      <button type="button" onclick="encryptMessage()">Зашифровать</button>
+      <button type="button" onclick="decryptMessage()">Дешифровать</button>
+    </form>
+    <div class="output">
+      <h3>Зашифрованное сообщение:</h3>
+      <p id="encryptedMessage"></p>
+    </div>
+    <div class="output">
+      <h3>Дешифрованное сообщение:</h3>
+      <p id="decryptedMessage"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
